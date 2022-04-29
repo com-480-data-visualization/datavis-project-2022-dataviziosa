@@ -1,0 +1,170 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>A Harry Potter journey</title>
+	<meta name="author" content="Emna Fendri, Stephane Selim and Alessio Verardo">
+	<meta name="description" content="Visualisation of the Harry Potter universe">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="keywords" content="Harry Potter, Visualisation, Vizualisation, Com-480, Data Visualisation">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="js/scrolloverflow.min.js"></script>
+<script src="js/fullpage2.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/d3.min.js"></script>
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.js"></script>-->
+<link rel="stylesheet" href="css/fullpage.min.css">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/fontawesome.min.css">
+</head>
+<body>
+<div id="wrapper">
+	<div class="section" data-anchor="Title">
+	<svg width="586" height="400" xmlns="http://www.w3.org/2000/svg">
+	 <g>
+	  <ellipse stroke-width="20" ry="72" rx="72" cy="270" id="hp1" cx="171" stroke="#fff" fill="#000"/>
+	  <ellipse stroke-width="20" ry="72" rx="72" cy="270" id="hp3" transform="rotate(192,390.0091,270)" cx="390.00912" stroke="#fff" fill="#000"/>
+	  <path id="hp2" d="m239,247c36,-26 85,-1 85,-1" opacity="NaN" stroke-width="20" stroke="#fff" fill="#000"/>
+	  <path id="hp4" d="m176.54311,41.80681l20.31907,37.15581l-8.37838,4.38497l25.58558,31.83439l-8.37462,5.31647l31.62913,53.30836l-53.64864,-40.85207l10.23273,-5.67321l-33.33333,-26.16614l11.94444,-8.08618l-35.19519,-27.44942l39.21921,-23.77298z" stroke-width="0" stroke="#e6b905" fill="#e6b905"/>
+	 </g>
+	</svg><br>
+	<a href="#Introduction">
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="120" id="arrow" viewBox="0 0 122.91 110.38">
+  <path id="hg2" transform="rotate(90 44.0126 61.8)" stroke-width="5"  d="m49.26179,61.79999l-30.74921,-40.50003l20.25078,0l30.74921,40.50003l-30.74921,40.49999l-20.25078,0l30.74921,-40.49999z" stroke="#fff" fill="#fff"/>
+  <path id="hg1" transform="rotate(90 44.0126 27.8)" stroke-width="5" d="m49.26179,27.79999l-30.74921,-40.50003l20.25078,0l30.74921,40.50003l-30.74921,40.49999l-20.25078,0l30.74921,-40.49999z" stroke="#fff" fill="#fff"/>
+  <path id="hg3" transform="rotate(90 44.013 96.8)" stroke-width="5" d="m49.26179,96.79999l-30.74921,-40.50003l20.25078,0l30.74921,40.50003l-30.74921,40.49999l-20.25078,0l30.74921,-40.49999z" stroke="#fff" fill="#fff"/>
+</svg>
+</a>
+	</div>
+	<div class="section" data-anchor="Introduction">
+		<div class="slide" data-anchor="Introduction-1">
+			<h1>Introduction</h1>
+			<ul>
+				<li>Introduction to the Harry Potter</li>
+				<li>Button to start music in background for a more immersive experince</li>
+			</ul>
+		</div>
+		<div class="slide" data-anchor="Introduction-2">
+			<h1>Books</h1>
+			<img src="images/scrolling_Gallery_hp_example.png" height="800" width="1560" >
+		</div>
+		<div class="slide" data-anchor="Introduction-3">
+			<h1>Movies</h1>
+			<img src="images/scrolling_Gallery_hp_example.png" height="800" width="1560" >
+		</div>
+	</div>
+	<div class="section" data-anchor="Hogwarts">
+		<div class="slide" data-anchor="Hogwarts-1">
+			<ul>
+				<li>Introduction to the Hogwarts houses</li>
+				<li>Explain their importance in the wizarding world universe</li>
+				<li>Explain how the visualisation will work</li>
+			</ul>
+		</div>
+		<div class="slide" data-anchor="Hogwarts-2">
+			<div class="col-12">
+				<h1>Selection menu for the house to analyse</h1>
+				<div class="col-5 hogwarts-logo">
+					<a href="index.html#Hogwarts/Hogwarts-3" onclick="redirectAnalyze('gryffindor')">
+						<img class="img-fluid mw-100 hogwarts-logo-img" src="images/gryffindor.png">
+					</a>
+				</div>
+				<div class="col-5 hogwarts-logo">
+					<a href="index.html#Hogwarts/Hogwarts-3" onclick="redirectAnalyze('ravenclaw')">
+						<img class="img-fluid mw-100 hogwarts-logo-img"src="images/ravenclaw.png">
+					</a>
+				</div>
+				<div class="col-5 hogwarts-logo">
+					<a href="index.html#Hogwarts/Hogwarts-3" onclick="redirectAnalyze('hufflepuff')">
+						<img class="img-fluid mw-100 hogwarts-logo-img" src="images/hufflepuff.png">
+					</a>
+				</div>
+				<div class="col-5 hogwarts-logo">
+					<a href="index.html#Hogwarts/Hogwarts-3" onclick="redirectAnalyze('slytherin')">
+						<img class="img-fluid mw-100 hogwarts-logo-img" src="images/slytherin.png">
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="slide" data-anchor="Hogwarts-3">
+			<h2>Bubble chart to explore the selected house</h2>
+			<img height="800" width="1560"  src="images/houses.png">
+		</div>
+	</div>
+	<div class="section" data-anchor="Characters">
+		<div class="slide" data-anchor="Characters-1">
+			<h1>Dive into the characters</h1>
+			<ul>
+				<li>Explain hwo the relation between are represented</li>
+				<li>Explain how the next visualisation will work</li>
+			</ul>
+		</div>
+		<div class="slide" data-anchor="Characters-2">
+			<h1>Characters network (using sigma.js)</h1>
+			<img height="800" width="1560"  src="images/network.png">
+		</div>
+	</div>
+	<div class="section" data-anchor="Magical-World">
+		<div class="slide" data-anchor="Magical-World-1">
+			<h1>Introduction to the magical world</h1>
+			Introduction to
+			<ul>
+				<li>Wand and spell importance</li>
+				<li>Wand components</li>
+			</ul>
+		</div>
+		<div class="slide" data-anchor="Magical-World-2">
+			<img height="800" width="1560"  src="images/characterToWand.png">
+		</div>
+		<div class="slide" data-anchor="Magical-World-3">
+			<img height="800" width="1560"  src="images/spellPiechart.png">
+		</div>
+	</div>
+	<div class="section" data-anchor="Deep">
+		<div class="slide" data-anchor="Deep-1">
+			<h1>Dive deeper in the books</h1>
+		</div>
+		<div class="slide" data-anchor="Deep-2">
+			<h1>Word cloud of the most important words for each book</h1>
+			<img height="800" width="1560" style="background-color: grey;" src="images/word_cloud.png">
+		</div>
+		<div class="slide" data-anchor="Deep-3">
+			<h1>Spell launched timeline (if time)</h1>
+		</div>
+	</div>
+	<div class="section" data-anchor="About">
+		A Harry Potter Journey was created by Emna Fendri, Stephane Selim and Alessio Verardo
+	</div>
+</div>
+
+<script>
+$(document).ready(function(){
+	$('#wrapper').fullpage({
+		anchors: ['Title', 'Introduction', 'Hogwarts','Characters','Magical-World','Deep','About'],
+        sectionsColor: ['black', 'black', 'black', 'black', 'black', 'black', 'black'],
+        slidesNavigation: true,
+		navigationPosition:"right",
+		autoScrolling: true,
+		  navigation: true,
+		  showActiveTooltip: true,
+		  slidesNavigation:true,
+		  slidesNavPosition:"bottom",
+		  normalScrollElements: '.modal',
+		  fitToSection:true,
+		  navigationTooltips: [
+        "",
+        "Introduction",
+        "Hogwarts houses",
+        "Characters",
+        "Magical World",
+        "Going deeper",
+        "About",
+      ],
+      controlArrows:false, 
+      showActiveTooltip:false
+	})
+})
+</script>
+</body>
+</html>
