@@ -1,0 +1,25 @@
+#tooltip, #tooltip3{
+	background-color: #DDDDDD;
+	color: black;
+	position: absolute;
+	width: 300px;
+	overflow: auto;
+	padding: 20px;
+	border-radius: 10px;
+}
+
+.axis{
+	color: white;
+}
+
+.in-boundary{
+	visibility: visible;
+	opacity: 1;
+	transition: opacity 0.750s, visibility 0.750s;
+
+}
+.out-boundary{
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 0.750s, visibility 0.750s;
+}

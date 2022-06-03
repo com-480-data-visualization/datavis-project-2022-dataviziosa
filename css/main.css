@@ -1,8 +1,20 @@
+
+.inline-block{
+  display: inline-block !important;
+}
+
+.modal-open {
+    overflow: hidden;
+    position:fixed;
+    width: 100%;
+    height: 100%;
+}
+
 .section{
 	text-align: center;
 }
 #fp-nav ul li a span, .fp-slidesNav ul li a span{
-	background: white;
+	background: white !important;
 }
 
 .fp-slidesNav{
@@ -18,16 +30,9 @@
   animation: 2.5s opacity forwards;
 }
 
-body{
-    color:white;
-}
-body ul{
-    list-style:none;
-}
-
 
 @keyframes opacity {
-  0% {opacity: 0} 
+  0% {opacity: 0}
   100% {opacity: 1}
 }
 
@@ -36,9 +41,9 @@ a path  {
       animation: 3.5s opacity2 infinite;
     }
     @keyframes opacity2 {
-      15% {opacity: 0.3} 
+      15% {opacity: 0.3}
       35% {opacity: 1}
-      65% {opacity: 1} 
+      65% {opacity: 1}
       85% {opacity: 0.3}
     }
     #hg2 {animation-delay: 0.5s}
@@ -60,19 +65,158 @@ a path  {
   }
 }
 
+@font-face {
+  font-family: HPFont;
+  src: url("/PotterViz/fonts/hp.ttf")
+}
+@font-face {
+  font-family: FBFont;
+  src: url("/PotterViz/fonts/fb.ttf")
+}
+@font-face {
+  font-family: WWFont;
+  src: url("/PotterViz/fonts/ww.ttf")
+}
+@font-face {
+  font-family: Akira;
+  src: url("/PotterViz/fonts/akira.otf")
+}
+
+body{
+  color: white!important;
+  /* Credits : https://www.cursors-4u.com/cursor/2011/02/06/harry-potter-magical-wand.html */
+  cursor: url("/PotterViz/assets/use160.cur"), auto !important;
+}
+body p {
+  font-size: 1.1em;
+}
 
 .hogwarts-logo{
-    display: inline-block;
+  display: inline-block;
 }
 
 .hogwarts-logo-img{
-    z-index: 0;
-    height: 300px;
-    transition: transform 300ms ease-in-out;
-}
+  z-index: 0;
+  height: 250px !important;
+  transition: transform 300ms ease-in-out;
+  }
 
 .hogwarts-logo-img:hover {
-    z-index: 999;
-    transform: scale(1.5);
+  z-index: 999;
+   transform: scale(1.5);
+}
+
+
+.axisWhite{
+  fill: #FFF;
+  stroke: #FFF;
+}
+
+.slideTitle{
+  font-size: 45px;
+  font-family: "WWFont";
+}
+.slideSubtitle{
+  font-size: 25px;
+  font-family: "WWFont";
+  margin-bottom: 0px;
+  margin-top: 0.7%;
+}
+
+.modal{
+  color:  grey !important;
+}
+
+.websiteImg{
+  display: block;
+  width: 50%;
+  /*margin-right: 30px;*/
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow:  0px 0px 27px 18px rgba(255,255,255,0.19);
+}
+
+.container p {
+  text-align: justify;
+}
+
+
+.card {
+  -webkit-border-radius: 10px;
+  border-radius: 10px; }
+
+.card .view {
+  -webkit-border-top-left-radius: 10px;
+  border-top-left-radius: 10px;
+  -webkit-border-top-right-radius: 10px;
+  border-top-right-radius: 10px; }
+
+.card h5 a {
+  color: #0d47a1;
+}
+.card h5 a:hover {
+  color: #072f6b;
+}
+
+
+#pButton {
+  margin-top: 12px;
+  cursor: pointer; }
+
+/*
+ music player
+*/
+
+#audioControl > i{
+  margin: 10px;
+}
+#audioControl{
+  text-align: center;
+}
+#audioTitle, #audioArtist{
+  margin-left: 20px;
+}
+
+#audioContainer{
+  z-index: 3;
+  border-radius: 25px;
+  width: 200px;
+  height: 140px;
+  border: solid;
+  border-color: gainsboro;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background-color: black;
+  opacity: 0.3;
+  transition: opacity 0.5s;
+}
+
+#audioContainer:hover {
+  opacity: 1;
+}
+
+#audioContainer .fa-solid  {
+  font-size: 35px;
+  color: gainsboro;
+  cursor: pointer;
+}
+
+.anychart-credits{
+  display: none;
+}
+
+.card p{
+  text-align: center;
+}
+
+
+.key-figure-container {
+  /*margin-left: 20%; */
+  padding: 7.5%;
+}
+
+.key-figures {
+  font-size: xx-large;
 }
 
