@@ -58,7 +58,7 @@ Once installed, to activate the environment, please use `conda activate pottervi
 
 ## Display our visualization locally
 You can either see our visualization [here](https://dataviziosa.github.io/PotterViz/) or you can display it locally. To do so, you will need to install [MAMP](https://www.mamp.info/en/mac/) which is a local web hoster. This will allow you to run an Apache Server locally and therefore, to be able to load files from disk without any complaints from the browser. Note that you have to change the path at exactly 5 locations to be able to run the code locally:
-- In main.css, you have to change the path to /PotterViz/ to / at every location (lines 70, 74, 78, 82)
+- In main.css, you have to change the path to /datavis-project-2022-dataviziosa/ to / at every location (lines 70, 74, 78, 82)
 - Similarly, in sentiment_analysis.css at line 71.
 Then, you just need to setup MAMP to point to the foler in which the visualization is stored and you will be able to display the visualization locally. 
 
